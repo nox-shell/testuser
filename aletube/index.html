@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/images/youtube.png" type="image/x-icon">
+    <title>aletube</title>
+</head>
+<body>
+   <div class="container">
+    <!-- --------------- HEADER --------------- -->
+      <nav id="header">
+        <div class="nav-logo">
+            <p class="nav-name">Car Shop</p>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="#home" class="nav-link active-link">Home</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#about" class="nav-link">shop</a>
+                    <div class="circle"></div>
+                </li>
+
+                <li class="nav_list">
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#projects" class="nav-link">sell my </a>
+                    <div class="circle"></div>
+                </li>
+            </ul>
+        </div>
+       
+        <div class="nav-menu-btn">
+            <i class="ri-menu-2-line" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+
+
+    <!-- -------------- MAIN ---------------- -->
+    <main class="wrapper">
+       <!-- -------------- FEATURED BOX ---------------- -->
+       <section class="featured-box" id="home">
+          <div class="featured-text">
+            <div class="featured-text-card">
+                <span>Buy you car today</span>
+            </div>
+            <div class="featured-name">
+                <p>Nox carshop</p>
+            </div>
+            <div class="featured-text-info">
+                <p>Welcome to our car shop! Quality and customer
+                     satisfaction drive us. Find your perfect vehicle today!
+                </p>
+            </div>
+            <div class="featured-text-btn">
+            <a href="#about">Market Plays</a>
+             <a class="a1" href="#">sell My Car</a>
+            </div>
+            <div class="social_icons">
+            </div>
+          </div>
+          <div class="featured-image">
+            <div class="image">
+                <img src="./assets/images/v8.png" alt="avatar">
+            </div>
+          </div>
+          <div class="scroll-icon-box">
+            <a href="#about" class="scroll-btn">
+                <i class="uil uil-mouse-alt"></i>
+                <p>Scroll Down</p>
+            </a>
+          </div>
+
+       </section>
+       <!-- -------------- shop BOX ---------------- -->
+       <section class="section" id="about">
+        <div class="containerrow" id="home">
+            <div class="featured-text-card">
+               <h3><span>Available Cars</span></h3>
+            </div>
+            
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search by model..." onkeyup="filterPosts()">
+            </div>
+            <div id="loading" class="loader"></div>
+            <div class="row mt-4" id="posts">
+                <!-- Blog posts will be dynamically inserted here -->
+            </div>
+        </div>
+    
+          </div>
+       </section>
+
+       <!-- -------------- CONTACT BOX ---------------- -->
+
+       <section class="section" id="contact">
+
+        <div class="top-header">
+            <h1>Contact US</h1>
+            <span>Contact us in you want to sell your car or any topic that you want to ask</span>
+        </div>
+        
+      
+            <div class="inner-container">
+                <div class="tile1">
+                    <form>
+                        <div class="form-row">
+                            <input type="text" class="form-field" placeholder="Enter your name">
+                        </div>
+                        <div class="form-row">
+                            <input type="text" class="form-field" placeholder="Enter your email address">
+                        </div>
+                        <div class="form-row">
+                            <textarea class="form-field" placeholder="Go ahead we are listening..."></textarea>
+                        </div>
+                        <div class="form-row">
+                            <input type="button" class="form-field btn" value="Submit">
+                        </div>
+                    </form>
+                </div>
+                <div class="tile2">
+                    <div class="tile2-image">
+                        <img src="./assets/images/contact.png">
+                    </div>
+                    <div>
+                        <div class="form-row">
+                            <img  class="contact-image"><span>564 Alabama Avenue</span>
+                        </div>
+                        <div class="form-row">
+                            <img class="contact-image"><span>+466723723666</span>
+                        </div>
+                        <div class="form-row">
+                            <img class="contact-image"><span>contact@admin.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+
+
+       </section>
+
+    </main>
+
+
+    <!-- --------------- FOOTER --------------- -->
+    <footer>
+        <div class="top-footer">
+            <p>NOX Car shop</p>
+        </div>
+        <div class="middle-footer">
+            <div class="grid-container">
+                <div class="grid-item"><img src="./assets/images/1.png" alt=""></div>
+                <div class="grid-item"><img src="./assets/images/2.png" alt=""></div>
+             
+              </div>              
+        </div>
+        <div class="footer-social-icons" >
+            <div class="icon" ><a href="#"target="_blank"><i class="ri-instagram-line"></i></a></div>
+            <div class="icon"><a href="#"target="_blank"><i class="ri-facebook-fill"></i></a></div>
+            <div class="icon"><a href="# "target="_blank"><i class="ri-twitter-x-fill"></i></a></div>
+            <div class="icon"><a href="#"target="_blank"><i class="ri-telegram-line"></i></a></div>
+        </div>
+        <div class="bottom-footer">
+            <p>Copyright &copy; <a href="#home" style="text-decoration: none;">NOX shopcar</a> - All rights reserved  <br>Developed by Kidus Birhanu <a href="https://nox.kesug.com/?i=1" style="text-decoration: none;">NOX</a> </p>
+        </div>
+    </footer>
+
+    </div>
+
+
+
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+       <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ----- MAIN JS ----- -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
